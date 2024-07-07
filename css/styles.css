@@ -3,6 +3,10 @@
     font-family: 'Orbitron';
     src: url('../fonts/Orbitron.ttf') ;
 }
+@font-face{
+    font-family: 'audiowide';
+    src: url('../fonts/Audiowide-Regular.ttf') ;
+}
 
 body {
     font-family: 'Arial', sans-serif;
@@ -15,7 +19,7 @@ body {
 .navbar-brand {
     font-size: 1.8em;
     text-align: center;
-    font-family: 'Orbitron';
+    font-family: 'audiowide';
     font-weight: 400;
 }
 
@@ -435,7 +439,6 @@ object-fit: cover;
 }
 .end-main .end-img img {
     width: 100%;
-    /* height: auto; */
     display: block;
     opacity: 1;
 }
@@ -504,13 +507,89 @@ object-fit: cover;
     background-color: #000;
     color: #fff;
     cursor: pointer;
+    margin-left: 10px;
 }
 .end-info .end-info-text .privacy-notice {
-    text-align: center;
+    text-align: left;
     font-size: 0.9rem;
     color: #666;
     margin-top: 10px;
+    margin-left: 430px;
 }
+
+/* Footer */
+footer {
+    margin-top: 300px ;
+    background-color: #f5f5f5;
+    padding: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-section {
+    flex: 1 1 200px;
+    margin: 10px;
+}
+.footer-section p{
+    font-size: 0.8rem;
+    margin-top: 27px;
+}
+.footer-section h3 {
+    margin-top: 0;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 8px 0;
+    
+}
+.footer-section ul li a{
+    color: #000;
+    font-size: 0.8rem;
+}
+.footer-bottom-section{
+    margin: 20px 400px;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+}
+.footer-bottom-section .footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+    /* border-top: 1px solid #e0e0e0; */
+}
+
+.footer-bottom p {
+    margin: 5px 0;
+    font-size: 0.65rem;
+}
+.footer-bottom .footer-end-text{
+    font-family: "audiowide";
+    font-size: 2.2rem;
+
+}
+
+.footer-social {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.footer-social a {
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 24px;
+}
+.footer-social a i{
+    color: #000;
+}
+
 
 @media (min-width: 300px) and (max-width:900px) {
     .navbar-nav {
@@ -692,6 +771,11 @@ object-fit: cover;
     }
     .end-info .end-info-text input[type=email], .end-info .end-info-text button {
         font-size: 15px;
+    }
+
+    .footer-section {
+        flex: 1 1 100%;
+        text-align: center;
     }
 }
 @media (max-width: 480px) {
