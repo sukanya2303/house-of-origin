@@ -47,30 +47,6 @@ body {
     margin-bottom: 0.5rem;
 }
 
-/* .main-home .row{
-    height: 100%;
-}
-
-.main-home .row  */
-
-/* .main-home .container .row .left-column {
-    background-image: url('img/model-1.jpeg');
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.main-home .row .right-column {
-    background-image: url('background2.jpg');
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
-
-
-
 .main-home .container-fluid {
     padding: 0px;
 }
@@ -563,7 +539,6 @@ footer {
 .footer-bottom-section .footer-bottom {
     text-align: center;
     padding: 10px 0;
-    /* border-top: 1px solid #e0e0e0; */
 }
 
 .footer-bottom p {
@@ -591,22 +566,33 @@ footer {
 }
 
 
-@media (min-width: 300px) and (max-width:900px) {
-    .navbar-nav {
+@media only screen and (max-width: 600px) {
+    .navbar-brand {
+        font-size: 1.2em;
+    }
+
+    .form-inline .form-control {
+        width: 100%;
+    }
+    .navbar-nav .nav-item {
         display: none;
     }
-    /* .navbar .navbar-brand{
-        margin-left: 0px;
-    } */
-
-    .mobile-nav {
-        display: block;
-        color: #000;
+    .nav-item {
+        display: block !important; 
+    }
+    .navbar-toggler {
+        margin-right: 10px;
     }
 
-    /* .secondary-nav .navbar-collapse {
-        display: none; 
-    } */
+    .mobile-nav {
+        padding: 10px; 
+    }
+
+    .main-home .women-column,
+    .main-home .men-column {
+        padding: 10px;
+    }
+
 
     /* Essentials */
 
@@ -627,7 +613,6 @@ footer {
     .item .bookmark img{
         position:relative;
         width: 24px;
-        /* height: auto; */
         top: -85px;
         left: 450px;
     }
@@ -640,7 +625,6 @@ footer {
     .best-seller .bookmark img{
         position:relative;
         width: 24px;
-        /* height: auto; */
         top: -80px;
         left: 450px;
     }
@@ -726,7 +710,6 @@ footer {
     .trial-room .trial-img .text-overlay p{
         font-size: 0.7rem;
         text-align: left;
-        /* margin: 0 60px; */
     }
     .trial-room .trial-img .text-overlay button{
         margin-top: 0;
@@ -760,7 +743,48 @@ footer {
     .end-main .end-img .text-overlay p{
         font-size: 0.7rem;
         text-align: left;
-        /* margin: 0 60px; */
+    }
+
+    .end-info .end-info-text h2 {
+        font-size: 2rem;
+    }
+    .end-info .end-info-text input[type=email], .end-info .end-info-text button {
+        font-size: 14px;
+    }
+    .end-info .end-info-text .subscribe {
+        flex-direction: column;
+    }
+    .end-info .end-info-text button {
+        width: auto;
+        margin-top: 10px;
+    }
+    .end-info .end-info-text .privacy-notice {
+        text-align: center;
+        font-size: 0.9rem;
+        color: #666;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    .footer-section {
+        flex: 1 1 100%;
+        text-align: center;
+    }
+    .footer-bottom-section{
+        margin-top: 10px;
+        margin-left: 100px;
+        justify-content: center;
+        align-items: center;
+        /* max-width: 500px; */
+    }
+    .footer-bottom-section .footer-bottom {
+        text-align: center;
+        padding: 10px 0;
+        /* border-top: 1px solid #e0e0e0; */
+    }
+    .footer-bottom .footer-end-text{
+        font-family: "audiowide";
+        font-size: 1.8rem;
+    
     }
 
 }
@@ -773,12 +797,23 @@ footer {
         font-size: 15px;
     }
 
-    .footer-section {
+    /* .footer-section {
         flex: 1 1 100%;
         text-align: center;
     }
-}
-@media (max-width: 480px) {
+    .footer-bottom-section{
+        margin: 20px 400px;
+        justify-content: center;
+        align-items: center;
+        max-width: 500px;
+    }
+    .footer-bottom-section .footer-bottom {
+        text-align: center;
+        padding: 10px 0;
+    } */
+} 
+
+/* @media (max-width: 480px) {
     .end-info .end-info-text h2 {
         font-size: 2rem;
     }
@@ -792,4 +827,4 @@ footer {
         width: 100%;
         margin-top: 10px;
     }
-}
+}  */
