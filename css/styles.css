@@ -1,0 +1,711 @@
+
+@font-face {
+    font-family: 'Orbitron';
+    src: url('../fonts/Orbitron.ttf') ;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.navbar {
+    background-color: #f8f9fa;
+}
+
+.navbar-brand {
+    font-size: 1.8em;
+    text-align: center;
+    font-family: 'Orbitron';
+    font-weight: 400;
+}
+
+.navbar-nav .nav-link {
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.form-inline .form-control {
+    border: 1px solid #000;
+    border-radius: 0;
+}
+
+.secondary-nav {
+    border-top: 1px solid #eaeaea;
+    overflow: auto;
+}
+
+.mobile-nav .nav-link {
+    font-weight: bold;
+    padding: 0.5rem;
+}
+
+.mobile-toggler {
+    margin-bottom: 0.5rem;
+}
+
+/* .main-home .row{
+    height: 100%;
+}
+
+.main-home .row  */
+
+/* .main-home .container .row .left-column {
+    background-image: url('img/model-1.jpeg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-home .row .right-column {
+    background-image: url('background2.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+
+
+.main-home .container-fluid {
+    padding: 0px;
+}
+  
+.main-home .row {
+margin: 0;
+}
+
+.main-home .women-column, .men-column {
+position: relative;
+padding: 0;
+}
+
+.main-home .women-column img, .men-column img {
+width: 100%;
+height: 100%; 
+object-fit: cover;
+/* border-radius: 10px; */
+}
+
+.overlay {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+color: #fff;
+}
+
+.overlay h2 {
+font-size: 24px;
+margin-bottom: 10px;
+}
+
+.overlay button {
+padding: 10px 20px;
+border: 2px;
+border-color: #fff;
+border-style: solid;
+color: #ffffff;
+cursor: pointer;
+border-radius: 0;
+}
+
+.overlay button:hover {
+color: #000000;
+border-color: #000000;
+border-style: solid;
+
+}
+
+/* Essentials  */
+
+.essentials{
+    padding: 50px;    
+}
+.essentials .content{
+    text-align: center;
+}
+.essentials .content h2{
+    text-transform: uppercase;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 3rem;
+    color: #000;
+}
+.essentials .content hr{
+    color: #000;
+    border: 2px solid;
+    width: 150px;
+    margin-top: 0;
+}
+.essentials .content p{
+    padding: 0 70px;
+}
+
+
+/* .item .container-fluid {
+    padding: 0px;
+}
+  
+.item .row {
+margin: 0;
+}
+.item .item-block{
+    margin-top: 20px;
+}
+.item .item-list {
+    position: relative;
+    padding: 0;
+    
+}
+    
+.item .item-list img {
+width: 100%;
+height: 100%; 
+object-fit: cover;
+} */
+
+
+/* Item  */
+
+.item .container-fluid {
+    padding: 0px;
+}
+
+.item .row {
+    margin: 0;
+}
+
+.item .item-list {
+    position: relative;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.item .image-container {
+    position: relative;
+}
+
+.item .image-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.item .text-container {
+    /* position: absolute; */
+    bottom: 10px;
+    left: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.item .explore-button .exp-btn{
+    background-color: #000;
+    margin-left: 600px;
+    border-radius: 0;
+}
+.item .explore-button .exp-btn a{
+    color: #ffffff;
+}
+
+.item .bookmark img {
+    width: 24px;
+    /* height: 24px; */
+    cursor: pointer;
+    position:relative;
+    /* width: auto;
+    height: auto; */
+    top: -85px;
+    left: 310px;
+}
+
+.item .bookmark.active img {
+    filter: invert(50%) sepia(100%) saturate(10000%) hue-rotate(10deg) brightness(95%) contrast(100%);
+    cursor: pointer;
+    fill: #d12020;
+}
+
+
+/* New arrivals  */
+
+.new-arrivals{
+    margin: 40px 0 -200px 0;
+}
+.new-arrivals .container-fluid{
+    padding: 0px;
+}
+.new-arrivals .arrival-img {
+    position: relative;
+    max-width: 100%;
+
+}
+.new-arrivals .arrival-img img {
+    width: 100%;
+    display: block;
+    opacity: 1;
+}
+.new-arrivals .text-overlay{
+    position:relative;
+    bottom: 580px; 
+    left: 20px;   
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 5px;
+    text-align: left; 
+    max-width: calc(100% - 40px); 
+}
+.new-arrivals .arrival-img .text-overlay h2{
+    font-size: 4.7rem;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: "Orbitron";
+}
+.new-arrivals .arrival-img .text-overlay p{
+    font-size: 1rem;
+    text-align: center;
+    margin: 0 60px;
+}
+.new-arrivals .arrival-img .text-overlay button{
+    margin-top: 30px;
+    margin-left: 550px;
+}
+.new-arrivals .arrival-img .text-overlay .exp-btn{
+    background-color: #ffffff;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 0;
+}
+.new-arrivals .arrival-img .text-overlay .exp-btn a{
+    color: #000000;
+}
+
+/* Best Seller*/
+
+.best-seller .container-fluid{
+    padding: 0px;
+}
+.best-seller .content{
+    text-align: center;
+}
+.best-seller .content h2{
+    text-transform: uppercase;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 3rem;
+    color: #000;
+}
+.best-seller .content hr{
+    color: #000;
+    border: 2px solid;
+    width: 150px;
+    margin-top: 0;
+}
+.best-seller .content p{
+    padding: 0 70px;
+    margin-bottom: 50px;
+}
+
+.best-seller .row {
+    margin: 0;
+}
+
+.best-seller .item-list {
+    position: relative;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.best-seller .image-container {
+    position: relative;
+}
+
+.best-seller .image-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.best-seller.text-container {
+    bottom: 10px;
+    left: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.best-seller .explore-button .exp-btn{
+    background-color: #000;
+    margin-left: 600px;
+    border-radius: 0;
+}
+.best-seller .explore-button .exp-btn a{
+    color: #ffffff;
+}
+
+.best-seller .bookmark img {
+    width: 24px;
+    cursor: pointer;
+    position:relative;
+    top: -80px;
+    left: 310px;
+}
+
+.best-seller .bookmark.active img {
+    filter: invert(50%) sepia(100%) saturate(10000%) hue-rotate(10deg) brightness(95%) contrast(100%);
+    cursor: pointer;
+    fill: #d12020;
+}
+
+
+/* Trail Room */
+.trial-room{
+    margin: 40px 0 -430px 0;
+}
+.trial-room .container-fluid{
+    padding: 0px;
+}
+.trial-room .trial-img {
+    position: relative;
+    max-width: 100%;
+
+}
+.trial-room .trial-img img {
+    width: 100%;
+    display: block;
+    opacity: 1;
+}
+.trial-room .text-overlay{
+    position:relative;
+    bottom: 580px; 
+    left: 20px;   
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 5px;
+    text-align: left; 
+    max-width: calc(100% - 40px); 
+}
+.trial-room .trial-img .text-overlay h2{
+    font-size: 4.7rem;
+    margin-bottom: 10px;
+    color: #000;
+    text-align: left;
+    font-family: "Orbitron";
+}
+.trial-room .trial-img .text-overlay .text-trial{
+    width: 600px;
+}
+.trial-room .trial-img .text-overlay p{
+    font-size: 1rem;
+    text-align: left;
+    color: #000;
+}
+.trial-room .trial-img .text-overlay button{
+    margin-top: 30px;
+    width: 200px;
+    background-color: #000000;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 0;
+}
+.trial-room .trial-img .text-overlay button:hover{
+    background-color: #1413137a;
+        
+}
+.trial-room .trial-img .text-overlay .trial-btn a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* End Section */
+
+.end-main{
+    margin: 40px 0 -200px 0;
+}
+.end-main .container-fluid{
+    padding: 0px;
+}
+.end-main .end-img {
+    position: relative;
+    max-width: 100%;
+
+}
+.end-main .end-img img {
+    width: 100%;
+    /* height: auto; */
+    display: block;
+    opacity: 1;
+}
+.end-main .text-overlay{
+    position:relative;
+    bottom: 200px; 
+    left: 20px;   
+    padding: 20px;
+    border-radius: 5px;
+    text-align: left; 
+    max-width: calc(100% - 40px); 
+}
+.end-main .end-img .text-overlay h2{
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+    text-align: left;
+    font-family: "Orbitron";
+}
+
+.end-main .end-img .text-overlay p{
+    font-size: 1rem;
+    text-align: left;
+    color: #ffffff;
+}
+
+/* Subscribe Section */
+
+.end-info{
+    margin: 60px 0 -200px 0;
+}
+.end-info .container-fluid{
+    padding: 0px;
+}
+.end-info .end-info-text h2{
+    font-family: "Orbitron", sans-serif;
+    text-align: center;
+    font-size: 3.2rem;
+    margin-bottom: 20px;
+}
+.end-info .end-info-text p{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.end-info .end-info-text .subscribe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+    margin: 0 auto;
+}
+.end-info .end-info-text p{
+    text-align: center;
+}
+.end-info .end-info-text input[type=email] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid rgb(34, 34, 34);
+    max-width: 100%;
+    flex-grow: 1;
+}
+.end-info .end-info-text button {
+    padding: 10px 20px;
+    font-size: 17px;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+}
+.end-info .end-info-text .privacy-notice {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 10px;
+}
+
+@media (min-width: 300px) and (max-width:900px) {
+    .navbar-nav {
+        display: none;
+    }
+    /* .navbar .navbar-brand{
+        margin-left: 0px;
+    } */
+
+    .mobile-nav {
+        display: block;
+        color: #000;
+    }
+
+    /* .secondary-nav .navbar-collapse {
+        display: none; 
+    } */
+
+    /* Essentials */
+
+    .essentials{
+        padding: 30px 0;    
+    }
+    .essentials .content{
+        text-align: center;
+    }
+    .essentials .content h2{
+        text-transform: uppercase;
+    }
+    .essentials .content p{
+        padding: 0 70px;
+    }
+    
+    /* Item  */
+    .item .bookmark img{
+        position:relative;
+        width: 24px;
+        /* height: auto; */
+        top: -85px;
+        left: 450px;
+    }
+    .item .explore-button .exp-btn{
+        margin-left: 180px;
+        border-radius: 0;
+    }
+
+    /* Best Seller */
+    .best-seller .bookmark img{
+        position:relative;
+        width: 24px;
+        /* height: auto; */
+        top: -80px;
+        left: 450px;
+    }
+
+    .best-seller .explore-button .exp-btn{
+        margin-left: 180px;
+        border-radius: 0;
+    }
+
+    /* New Arrivals */
+
+    .new-arrivals .text-overlay{
+        position:relative;
+        bottom: 220px; 
+        left: 20px;   
+        color: rgb(255, 255, 255);
+        padding: 20px;
+        border-radius: 5px;
+        text-align: left; 
+        max-width: calc(100% - 40px); 
+    }
+    .new-arrivals .arrival-img .text-overlay h2{
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+        text-align: center;
+        font-family: "Orbitron";
+    }
+    .new-arrivals .arrival-img .text-overlay p{
+        font-size: 0.7rem;
+        text-align: center;
+        margin: 0 60px;
+    }
+    .new-arrivals .arrival-img .text-overlay button{
+        margin-top: 30px;
+        margin-left: 30%;
+        width: auto;
+    }
+    .new-arrivals .arrival-img .text-overlay .exp-btn{
+        background-color: #ffffff;
+        color: #000000;
+        cursor: pointer;
+        text-align: center;
+        border-radius: 0;
+    }
+
+    /* Best Sellers */
+    .best-seller{
+        padding: 30px 0;    
+    }
+    .best-seller .content{
+        text-align: center;
+    }
+    .best-seller .content h2{
+        text-transform: uppercase;
+    }
+    .best-seller .content p{
+        padding: 0 70px;
+    }
+
+    /* Trial Room */
+    .trial-room{
+        margin: 0 0 -290px 0;
+    }
+    .trial-room .text-overlay{
+        position:relative;
+        bottom: 250px; 
+        left: 20px;   
+        color: rgb(255, 255, 255);
+        padding: 20px;
+        border-radius: 5px;
+        text-align: left; 
+        max-width: calc(100% - 40px); 
+    }
+    .trial-room .trial-img .text-overlay h2{
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+        text-align: left;
+        font-family: "Orbitron";
+    }
+    .trial-room .trial-img .text-overlay .text-trial{
+        width: 240px;
+    }
+    .trial-room .trial-img .text-overlay p{
+        font-size: 0.7rem;
+        text-align: left;
+        /* margin: 0 60px; */
+    }
+    .trial-room .trial-img .text-overlay button{
+        margin-top: 0;
+        width: auto;
+        background-color: #000000;
+        color: #ffffff;
+        cursor: pointer;
+        text-align: center;
+        border-radius: 0;
+    }
+
+    /* End section */
+
+    .end-main .text-overlay{
+        position:relative;
+        bottom: 150px; 
+        left: 20px; 
+        padding: 20px;
+        border-radius: 5px;
+        text-align: left;
+    }
+    .end-main .end-img .text-overlay h2{
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+        text-align: left;
+        font-family: "Orbitron";
+    }
+    .end-main .end-img .text-overlay .text-trial{
+        width: 240px;
+    }
+    .end-main .end-img .text-overlay p{
+        font-size: 0.7rem;
+        text-align: left;
+        /* margin: 0 60px; */
+    }
+
+}
+
+@media (max-width: 768px) {
+    .end-info .end-info-text h2 {
+        font-size: 2.5rem;
+    }
+    .end-info .end-info-text input[type=email], .end-info .end-info-text button {
+        font-size: 15px;
+    }
+}
+@media (max-width: 480px) {
+    .end-info .end-info-text h2 {
+        font-size: 2rem;
+    }
+    .end-info .end-info-text input[type=email], .end-info .end-info-text button {
+        font-size: 14px;
+    }
+    .end-info .end-info-text .subscribe {
+        flex-direction: column;
+    }
+    .end-info .end-info-text button {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
